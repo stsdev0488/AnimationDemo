@@ -10,7 +10,7 @@ export const BaseScreen: React.FC<Props> = ({ children }) => {
   return (
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'position'}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         style={styles.innerWrapper}
       >
         {children}
